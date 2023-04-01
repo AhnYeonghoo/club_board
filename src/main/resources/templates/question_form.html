@@ -1,6 +1,6 @@
 <html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml">
 <div layout:fragment="content" class="container">
-  <h5 class="my-3 border-bottom pb-2">질문등록</h5>
+  <h5 class="my-3 border-bottom pb-2">게시글 등록</h5>
   <form th:action="@{/question/create}" th:object="${questionForm}" method="post">
     <div class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
       <div th:each="err : ${#fields.allErrors()}" th:text="${err}" />
